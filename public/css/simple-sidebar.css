@@ -3,6 +3,10 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
+ @import url(//db.onlinewebfonts.com/c/478e17b3651ca5818e167a8644947bde?family=Gidole);
+ *{
+   font-family:  "Gidole";
+ }
 body {
   overflow-x: hidden;
 }
