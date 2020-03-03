@@ -18,7 +18,8 @@
   <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
     integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-</head>
+<link rel="stylesheet" href="css/main.css">
+  </head>
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom">
@@ -79,11 +80,11 @@
           </a>
         </li> -->
         <li class="nav-item">
-          <a class=" mr-sm-2 btn btn-outline-primary nav-link" href="#">Log In</a>
+          <a class=" mr-sm-2 btn btn-outline-primary nav-link" href="/LogIn.html">Log In</a>
         </li>
         </li>
         <li class="nav-item">
-          <a class=" mr-sm-2 btn btn-outline-secondary nav-link" href="#">Sing In</a>
+          <a class=" mr-sm-2 btn btn-outline-secondary nav-link" href="/Sing up.html">Sing up</a>
         </li>
 
       </ul>
@@ -180,7 +181,7 @@
       <div class="container-fluid  border-bottom my-md-5 ">
         <h2 class="mt-4">Ask a question or start a discussion …</h2>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="What do you want to know?"
+          <input type="text" id="create" class="form-control" placeholder="What do you want to know?"
             aria-label="What do you want to know?" aria-describedby="button-addon2">
           <div class="input-group-append">
             <a href="/createPost.html" class="btn btn-outline-secondary" type="button" id="button-addon2">
@@ -312,6 +313,11 @@
 
   <!-- Menu Toggle Script -->
   <script>
+      $("#create").click(function (e) {
+        e.preventDefault();
+        console.log("fsfdg");
+        location.href+="createPost.html";
+      });
      $("#wrapper").toggleClass("toggled");
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
