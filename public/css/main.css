@@ -1,6 +1,26 @@
-.btn-outline-primary{
-    color: black;
-    border-color: black;
+* {
+    color: #0E1112;
+}
+
+.btn-outline-primary {
+    color: #1F7EAD;
+    border-color: #1F7EAD;
+}
+
+.btn-primary {
+    background-color: #1F7EAD;
+    border-color: #1F7EAD;
+}
+
+.bg-primary {
+    background-color: #1F7EAD;
+}
+
+.bg-primary:hover {
+    background-color: rgb(17, 103, 146);
+}
+.bg-light{
+    background-color: #53BDCC;
 }
 /* h1{
     background-color: aqua;

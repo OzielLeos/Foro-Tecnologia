@@ -168,66 +168,9 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">[ Tech Discussion Community ]</h1>
-          <p class="lead">
-            { We're a friendly, industry-focused community of 1.18 million developers, IT pros, digital marketers, and
-            technology enthusiasts learning and sharing knowledge. }
-          </p>
-        </div>
-      </div>
-
-      <div class="container-fluid  border-bottom my-md-5 ">
-        <h2 class="mt-4">Ask a question or start a discussion …</h2>
-        <div class="input-group mb-3">
-          <input type="text" id="create" class="form-control" placeholder="What do you want to know?"
-            aria-label="What do you want to know?" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <a href="/createPost.html" class="btn btn-outline-secondary" type="button" id="button-addon2">
-              <i class="fa fa-edit" aria-hidden="true"></i>
-              Start new Topic</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row mb-5">
-          <div class="col-lg-6">
-            <a class="shadow-sm btn btn-dw-link jumbotron d-block p-2 mb-2" href="/connect/matches"> <span
-                class="h1 d-block mt-0">
-                <i class="fa fa-comment fa-fw" aria-hidden="true"></i>
-                Meet People
-              </span> <span class="h4">
-                with our professional matchmaking engine
-              </span> </a> </div>
-          <div class="col-lg-6">
-            <a class="shadow-sm btn btn-dw-link jumbotron d-block p-2 mb-2" href="/connect/users">
-              <span class="h1 d-block mt-0">
-                <i class="fas fa-user-tag fa-fw   "></i>
-                People Search
-              </span> <span class="h4">
-                by skills, interests, and location
-              </span> </a>
-          </div>
-          <div class="col-lg-6"> <a class="shadow-sm btn btn-dw-link jumbotron d-block p-2 mb-2" href="/connect/groups">
-              <span class="h1">
-                <i class="fa fa-comments fa-fw" aria-hidden="true"></i>
-                <!-- <i class="fas fa-comments fa-fw"></i> -->
-                Group Chats
-              </span> </a> </div>
-          <div class="col-lg-6"> <a class="shadow-sm btn btn-dw-link jumbotron d-block p-2 mb-2"
-              href="/connect/developers"> <span class="h1">
-
-                <i class="fas fa-code-branch fa-fw   "></i>
-                <!-- <i class="fas fa-code-branch fa-fw"></i> -->
-                Developer API
-              </span> </a> </div>
-        </div>
-      </div>
       <div class="container-fluid  border-bottom my-md-5 ">
 
-        <h2>The lastest</h2>
+        <!-- <h2>The lastest</h2> -->
         <container class="d-flex justify-content-center">
 
 
@@ -240,8 +183,7 @@
               </span>
             </div>
             <div class="card-body">
-
-              <a href="/post.html" class="h2 text-primary">Javafx</a>
+              <p class="h2 text-primary">Javafx</p>
               <p class="card-text">
                 How do I make a cube in javafx that have 6 different textures on each side of the cube?
                 The only way I know how to solve this, is by making 6 imageviews and give them each a specific
@@ -251,18 +193,81 @@
               </p>
             </div>
             <div class="card-footer text-muted">
-              <div> <a class="badge btn-dw-link" href="/tags/3d"><i class="fas fa-tag fa-fw"></i>3d</a> <a
-                  class="badge btn-dw-link" href="/tags/cube"><i class="fas fa-tag fa-fw"></i>cube</a> <a
-                  class="badge btn-dw-link" href="/tags/java"><i class="fas fa-tag fa-fw"></i>java</a> <a
-                  class="badge btn-dw-link" href="/tags/javafx"><i class="fas fa-tag fa-fw"></i>javafx</a> <a
-                  class="badge btn-dw-link" href="/tags/textures"><i class="fas fa-tag fa-fw"></i>textures</a> </div>
+              <div>
+                <div class="container">
+                  <a height="200px" href="" class="btn btn-primary"><i class="fas fa-thumbs-up    "></i></a>
+                  <a height="200px" href="" class="btn btn-primary"><i class="fas fa-thumbs-down    "></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
+        </container>
+
+        <container class="d-flex justify-content-center my-2">
+
+          <div class="card" style="width: 95%;">
+            <div class="card-footer text-muted">
+              <span class="text-muted">
+                Comment as user2
+              </span>
+              <textarea style="width: 100%; height: 100px;" placeholder="what are your thoughts?"></textarea>
+
+
+
+              <button type="submit" class="btn btn-outline-secondary float-right"><i class="fa fa-share"></i>
+                Share</button>
+
+            </div>
+          </div>
+        </container>
+
+
+        <container class="d-flex justify-content-center my-4">
+          <div class="d-flex border-top " style="width: 95%;">
+
+            <a class=" mr-2"> short by </a>
+            <select type="text" class="form-control multiselect multiselect-icon" style="width: 80px;" name="select">
+              <option value="value1">Value 1</option>
+              <option value="value2" selected>best</option>
+              <option value="value3">Value 3</option>
+            </select>
+          </div>
 
         </container>
-      </div>
 
+
+
+        <container class="d-flex justify-content-center ">
+
+          <div class=" mr-2 " style="width: 95%; ">
+            <!-- the comments -->
+            <div class="mr-1">
+              <h6><i class="fa fa-comment"></i> User One says:
+                <small> 9:41 PM on August 24, 2014</small>
+              </h6>
+              <p>Excellent post! Thank You the great article, it was useful!</p>
+              <i class="fas fa-thumbs-down    "></i>
+              <i class="fas fa-thumbs-up    "></i>
+              <span><i class="fa fa-reply" aria-hidden="true"></i></span>
+
+            </div>
+
+            <div class="my-2">
+              <h6><i class="fa fa-comment"></i> User Two says:
+                <small> 9:47 PM on August 24, 2014</small>
+              </h6>
+              <p>Excellent post! Thank You the great article, it was useful!</p>
+              <i class="fas fa-thumbs-down    "></i>
+              <i class="fas fa-thumbs-up    "></i>
+              <span><i class="fa fa-reply" aria-hidden="true"></i></span>
+            </div>
+
+          </div>
+        </container>
+
+
+      </div>
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
